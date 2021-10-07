@@ -1,0 +1,122 @@
+html {
+  background: #ddd;  
+  height: 100%;
+  display: flex;
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todo-list {
+  background: #fff;
+  font-size: 15px;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/** BUTTONS*/
+
+
+
+ .button {
+  outline: none;
+  padding: 8px;
+  font-size: 15px;
+  border: 0px solid;
+  border-radius: 5px;
+  color: white;
+}
+.button[disabled]{
+  opacity: 0.3;
+}
+
+
+
+
+
+/** TODO*/
+.file-input{
+  padding: 2px;
+  background: #f8f8f8;
+}
+
+.file-input > .text {
+  outline: none;
+  padding: 0px 10px;
+  font-size: 15px;
+  width: 230px;
+  height: 46px;
+  background:transparent;
+  border: 0px solid;
+}
+
+
+/** CHECKBOX*/
+/* Original styles by Shaw : https://codepen.io/shshaw/pen/WXMdwE */
+
+
+.todo {
+  display: block;
+  position: relative;
+  padding: 1em 1em 1em 16%;
+  margin: 0 auto;
+  cursor: pointer; 
+  border-bottom: solid 1px #ddd; 
+
+}
+
+.todo.new-item {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: fadeIn .3s linear forwards;
+}
+
+.todo__state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: aqua;
+}
+
+
+.todo__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  
+  fill: none;
+
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+
+
+
+  
+
+
+
+@keyframes fadeIn {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
